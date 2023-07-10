@@ -1,0 +1,14 @@
+Video understanding is a popular field in computer vision and AI where we aim to learn/assess the world
+around us from video footage and can benefit many real-world applications, such as training and education,
+patient monitoring, sports assessment, and security systems. By automating these applications through
+video analysing, not only we can save money and time for their users, but also, we can decrease human
+errors. Despite the recent advances in the other areas of computer vision, e.g. image analysis, video
+understanding is still an unsolved problem and is considered a very challenging task.
+The proposed workshop on video understanding aims to address the challenges in this field by making the
+following contributions:
+• Bringing together leading experts in the field of video understanding to help propel the field forward.
+This includes junior and senior researchers, with equal representation and contribution from academia
+and industry
+• The workshop also aims to stimulate and accelerate research progress in the field of video under-
+standing to match the requirements of real-world applications by identifying the challenges and ways
+to address them through a panel discussion between experts, presenters and attendees
