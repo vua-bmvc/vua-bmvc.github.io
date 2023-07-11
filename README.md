@@ -1,3 +1,3 @@
-## MULA Website
+## VUA Website
 
-Theme made by [Andrea Galanti](http://www.andreagalanti.it/flatfy.php)
+Theme made by [Asmar Nadeem](https://www.surrey.ac.uk/people/asmar-nadeem)
