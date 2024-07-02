@@ -1,765 +1,344 @@
- <!-- FlatFy Theme - Andrea Galanti /-->
-<!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="The 1st Workshop in Video Understanding and its Applications">
     <meta name="author" content="">
 
     <title>VUA 2023</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    
     <!-- Custom Google Web Font -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700&display=swap" rel="stylesheet">
 
-    <!-- Custom CSS-->
-    <link href="css/general.css" rel="stylesheet">
-
-	 <!-- Owl-Carousel -->
-    <link href="css/custom.css" rel="stylesheet">
-	<link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<link href="css/animate.css" rel="stylesheet">
-
-	<!-- Magnific Popup core CSS file -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-
-	<script src="js/modernizr-2.8.3.min.js"></script>  <!-- Modernizr /-->
-	<!--[if IE 9]>
-		<script src="js/PIE_IE9.js"></script>
-	<![endif]-->
-	<!--[if lt IE 9]>
-		<script src="js/PIE_IE678.js"></script>
-	<![endif]-->
-
-	<!--[if lt IE 9]>
-		<script src="js/html5shiv.js"></script>
-	<![endif]-->
-
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+        }
+        .intro-header {
+            background: url('img/header-bg.jpg') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .intro-header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .intro-header h3 {
+            font-size: 1.5rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        .section-heading {
+            font-family: 'Arvo', serif;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+        .content-section {
+            padding: 5rem 0;
+        }
+        .content-section-a {
+            background-color: #f8f9fa;
+        }
+        .content-section-b {
+            background-color: #ffffff;
+        }
+        .img-rounded {
+            border-radius: 50%;
+            max-width: 200px;
+            margin-bottom: 1rem;
+        }
+        @media (max-width: 768px) {
+            .intro-header h1 {
+                font-size: 2rem;
+            }
+            .intro-header h3 {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 
-<body id="home">
-
-	<!-- Preloader -->
-	<div id="preloader">
-		<div id="status"></div>
-	</div>
-
-	<!-- FullScreen -->
-    <div class="intro-header">
-		<div class="col-xs-12 text-center abcen1">
-			<h1 class="h1_home wow fadeIn" data-wow-delay="0.4s" style="text-shadow: 0 0 8px #000000;">The 1<sup>st</sup> Workshop in Video Understanding and its Applications</h1>
-			<h3 class="h3_home wow fadeIn" data-wow-delay="0.6s" style="text-shadow: 0px 0px 4px black, 0 0 25px black">
-				<br></br>
-				<br></br>
-				<p>In conjunction with <a style="color:white" href="https://bmvc2023.org/" target="_blank"><b>BMVC 2023</b></a>. </p>
-				<p><b>Aberdeen, United Kingdom </b></p> November 24<sup>th</sup> 2023
-				<!-- <p>Room: West 223-224</p> -->
-			</h3>
-			<!--ul class="list-inline intro-social-buttons">
-				<li><a href="https://twitter.com/galantiandrea" class="btn  btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s"><span class="network-name">Twitter</span></a>
-				</li>
-				<li id="download" ><a href="#downloadlink" class="btn  btn-lg mybutton_standard wow swing wow fadeIn" data-wow-delay="1.2s"><span class="network-name">Free Download</span></a>
-				</li>
-			</ul-->
-		</div>
-        <!-- /.container -->
-		<div class="col-xs-12 text-center abcen wow fadeIn">
-			<div class="button_down ">
-				<a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#scope"> <img class="img_scroll" src="img/icon/circle.png" alt=""> </a>
-			</div>
-		</div>
-    </div>
-
-	<!-- NavBar-->
-	<nav class="navbar-default" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#home">VUA 2023</a>
-			</div>
-
-			<div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
-				<ul class="nav navbar-nav">
-
-					<li class="menuItem"><a href="#scope">Home</a></li>
-					<li class="menuItem"><a href="#submit">Submit</a></li>
-					<li class="menuItem"><a href="#program">Program</a></li>
-					<li class="menuItem"><a href="#invited">Invited Speakers</a></li>
-					<li class="menuItem"><a href="#organizers">Organizers</a></li>
-					 <!-- <li class="menuItem"><a href="#sponsors">Sponsors</a></li>					  -->
-					<li class="menuItem"><a href="#contacts">Contacts</a></li>
-					<!-- <li class="menuItem"><a href="#special_issue">IJCV Special Issue</a></li> -->
-					<!-- <li class="menuItem"><a href="#old_editions">Old Editions</a></li> -->
-				</ul>
-			</div>
-
-		</div>
-	</nav>
-
-	<!-- Scope -->
-    <div id ="scope" class="content-section-a" style="border-top: 0">
-
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-
-            <div class="row">
-
-				<!--div class="col-sm-6 pull-right wow fadeInRightBig">
-                    <img class="img-responsive " src="img/ipad.png" alt="">
-                </div-->
-
-                <div class="wow fadeInRightBig" data-animation-delay="200">
-                    <h3 class="section-heading">The 1<sup>st</sup> Workshop in Video Understanding and its Applications (VUA 2023)</h3>
-					<!-- <div class="sub-title lead" style="text-align:center"> Best Paper Award sponsored by:</div>
-                     <p class="lead"  style="text-align:center">
-						 <a href="https://www.bosch.com/" target="_blank"><img src="img/sponsor/bosch.png" height="70"></a>
-						 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-						 <a href="https://www.snap.com/" target="_blank"><img src="img/sponsor/Snap-black.png" height="60"></a>
-					 </p>  -->
-
-<!--
-		    <p class="lead"  style="text-align:justify">  <b>NEWS! </b>Full recording of the event is available at <u>   <a href="https://www.youtube.com/watch?v=pHuFMcaoLio&ab_channel=MichaelYang" >https://www.youtube.com/watch?v=pHuFMcaoLio&ab_channel=MichaelYang</a>  </u>
--->
-		    </p>
-                    <p class="lead"  style="text-align:justify">
-						Video understanding is a popular field in computer vision and AI where we aim to learn/assess the world around us from video footage and can benefit many real-world applications, such as training and education, patient monitoring, sports assessment, and security systems. By automating these applications through video analysing, not only we can save money and time for their users, but also, we can decrease human errors. Despite the recent advances in the other areas of computer vision, e.g. image analysis, video understanding is still an unsolved problem and is considered a very challenging task.<br/><br/>
-						The proposed workshop on video understanding aims to address the challenges in this field by making the following contributions: <br/>
-                                                        <li>Bringing together leading experts in the field of video understanding to help propel the field forward. This includes junior and senior researchers, with equal representation and contribution from academia and industry</li>
-                                                        <li>The workshop also aims to stimulate and accelerate research progress in the field of video understanding to match the requirements of real-world applications by identifying the challenges and ways to address them.</li><br/>
-
-
-						<b>Potential topics </b> include, but are not limited to: <br/>
-						<ul class="lead">
-							<li>Application of Video Understanding to healthcare and media production</li>
-							<li>View-invariant and 3D video understanding (e.g. 3D action recognition)</li>
-							<li>Transformer for video understanding</li>
-							<li>Generating synthetic data for video understating tasks</li>
-							<li>Self-supervised learning for video understanding</li>
-							<li>Multi-modal video understanding</li>
-							<li>Action/event detection</li>
-							<li>Video captioning</li>
-							<li>Video editing and summarization</li>
-							<li>Videography/virtual cinematography</li>
-							<li>Video search and retrieval</li>
-						</ul>
-					</p>
-
-
-
-					 <!--p><a class="btn btn-embossed btn-primary" href="#" role="button">View Details</a>
-					 <a class="btn btn-embossed btn-info" href="#" role="button">Visit Website</a></p-->
-				</div>
+            <a class="navbar-brand" href="#home">VUA 2023</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#scope">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#submit">Submit</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#program">Program</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#invited">Invited Speakers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#organizers">Organizers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
+                </ul>
             </div>
         </div>
-        <!-- /.container -->
-    </div>
+    </nav>
 
-	<!-- Call for Papers -->
-    <div id ="submit" class="content-section-b">
-
+    <!-- Header -->
+    <header class="intro-header" id="home">
         <div class="container">
-
             <div class="row">
-
-				<!--div class="col-sm-6 pull-right wow fadeInRightBig">
-                    <img class="img-responsive " src="img/ipad.png" alt="">
-                </div-->
-
-                <div class="wow fadeInLeftBig" data-animation-delay="200">
-                    <h3 class="section-heading">Submission</h3>
-
-
-                    <p class="lead"  style="text-align:justify">
-						Papers will be limited to 9 pages according to the  <u><a href="https://bmvc2023.org/authors/submit-your-paper/" Target="blank">BMVC format</a></u> (c.f. main conference authors guidelines).
-
-						Papers will be published in BMVC 2023 workshop proceedings.
-					</p>
-					<p class="lead"  style="text-align:justify">
-						All the papers should be submitted using CMT website <u><a href="https://cmt3.research.microsoft.com/VUABMVC2023" Target="blank">https://cmt3.research.microsoft.com/VUABMVC2023</a></u>.
-					</p>
-
-				</div>
-
-				<div class="wow fadeInRightBig" data-animation-delay="200">
-                    <h3 class="section-heading">Important Dates</h3>
-					<!--div class="sub-title lead3">Lorem ipsum dolor sit atmet sit dolor greand fdanrh<br> sdfs sit atmet sit dolor greand fdanrh sdfs</div-->
-                    <ul class="lead">
-
-						<!-- <del><li>Deadline for submission: March 9<sup>th</sup>, 2023 - 23:59 Pacific Standard Time</li></del>
-						<b>---EXTENDED---</b> -->
-
-						<li> Deadline for submission: August 20<sup>th</sup>, 2023 - 23:59 British Summer Time </li>
-
-						<!-- <del><li>Notification of acceptance  March 30<sup>th</sup>, 2023</li></del> -->
-						<li>Notification of acceptance: September 10<sup>th</sup>, 2023</li>
-						<!-- <del><li>Camera Ready submission deadline: April 6<sup>th</sup>, 2023</li></del>
-
-						<b>---EXTENDED---</b> -->
-						<li>Camera Ready submission deadline: September 25<sup>th</sup>, 2023</li>
-
-						<li> Workshop date: November 24<sup>th</sup>, 2023</li>
-
-				</ul>
-				</div>
-            </div>
-        </div>
-        <!-- /.container -->
-    </div>
-
-	<!-- Program -->
-    <div id ="program" class="content-section-a">
-
-        <div class="container">
-                <div class="wow fadeInLeftBig" data-animation-delay="200">
-                    <h3 class="section-heading">Program</h3>
-                    <p class="lead"  style="text-align:justify;font-size:15px">
-						<p class="lead"  style="text-align:justify">
-							<u>Robert Gordon University, Sir Ian Wood Building, Garthdee Campus</u> <br>
-						</p>
-                    	<!-- Room: Seaside 7 -->
-
-			<!-- <b> N.B.</b>  Time is CDT (Central Daylight Time); -->
-
-<!--
-			    <p class="lead"  style="text-align:justify">  Full recording of the event is available at <u>   <a href="https://www.youtube.com/watch?v=pHuFMcaoLio&ab_channel=MichaelYang" >https://www.youtube.com/watch?v=pHuFMcaoLio&ab_channel=MichaelYang</a>  </u>
-			    </p>
--->
-
-					 <p class="lead"  style="text-align:justify">
-					10:00-10:05 - Welcome and Introduction <br>
-					</p>
-					<p class="lead"  style="text-align:justify">
-					10:05-10:55 - Keynote 1 - <b> Dr. Joao Carreira (Google Deepmind) </b> (40 mins talk followed by 10 mins Q&A) <br>
-					</p>
-          <p class="lead"  style="text-align:justify">
-					11:00-11:50 - Keynote 2 - <b> Professor Dima Damen (University of Bristol) </b> (40 mins talk followed by 10 mins Q&A) <br>
-					</p>
-          <p class="lead"  style="text-align:justify">
-          11:50-12:10 - AI4ME Presentation - <b> Faegheh Sardari & Asmar Nadeem  </b> (Video Understanding for personalized media production) <br>
-          </p>
-          <p class="lead"  style="text-align:justify">
-  				12:10-12:30 - Lunch break <br>
-  				</p>
-          <p class="lead"  style="text-align:justify">
-          12:30-14:00 - Oral Session (10-min presentations + 2-min Q&A)
-          </p>
-          <p class="lead" style="text-align:justify;font-size:15px;padding-left: 5em">
-            1. End-to-end Amodal Video Instance Segmentation - <i>  Jasmin Breitenstein (Technische Universität Braunschweig)*; Kangdong Jin (Institute for Communications Technology, Technische Universität Braunschweig); Aziz Hakiri (Technische Universität Braunschweig); Marvin Klingner (Technische Universität Braunschweig ); Tim Fingscheidt ( Technische Universität Braunschweig) </i> <br>
-            2. Self-supervised animal detection in constrained environment - <i> Fayaz Rahman (Cochin University of Science and Technology ); C B Dev Narayan (Cochin University ); Mohib Ullah (NTNU)*; Muhammad Mudassar Yamin (Norwegian University of Science and Technology); Øyvind Nordbø (Norsvin SA, 2317 Hamar, Norway.); Christopher Coello (Norsvin SA, 2317 Hamar, Norway.); Ali Shariq Imran (NTNU Gjøvik, Norway); Santhosh Kumar Gopalan (Cochin University of Science and Technology); Madhu S Nair (CUSAT); Faouzi Alaya-Chekh (NTNU at Gjøvik, Norway) </i> <br>
-            3. ZeST-NeRF: Using temporal aggregation for Zero-Shot Temporal NeRFs - <i> Violeta Menéndez González (University of Surrey)*; Andrew Gilbert (University of Surrey); Graeme Phillipson (BBC); Stephen Jolly (BBC); Simon Hadfield (University of Surrey)</i> <br>
-            4. Pedestrian and Automatic Doors Abnormal Interactions Detection using Multi-Task Self-Supervised Learning - <i> Olivier Laurendin (IRT Railenium)*; Sebastien Ambellouis (Gustave Eiffel University); Ankur V Mahtani (IRT Railenium); Anthony Fleury (IMT Lille Douai)</i> <br>
-            5. Actor and Context Attentions for Spatio-Temporal Action Localization - <i> Manuel Sarmiento (Apple)*; David Varas (Apple); Elisenda Bou-Balust (Apple)</i> <br>
-            6. Centre Stage: Centricity-based Audio-Visual Temporal Action Detection - <i> Hanyuan Wang (University of Bristol)*; Majid Mirmehdi (University of Bristol); Dima Damen (University of Bristol); Toby Perrett (University of Bristol)</i> <br>
-          </p>
-          <p class="lead"  style="text-align:justify">
-					14:00-14:50 - Keynote 3 - <b> Dr. Fabian Caba (Adobe) </b> (40 mins talk followed by 10 mins Q&A) <br>
-					</p>
-
-					<!-- <p class="lead"  style="text-align:justify;font-size:15px;padding-left: 5em">
-					  <i> Abstract: </i>  The tremendous growth of multimodal video data in recent years has increased the demand for efficient multimodal deep neural network models, particularly in domains where real-time inference is essential. While significant progress has been made on model compression and acceleration for video understanding, most existing methods rely on one-size-fits-all models, which apply the same amount of computation for all video segments across all modalities. In this talk, I will instead cover methods that adaptively change computation depending on the content of the input. In particular, in the context of audio-visual action recognition, I will describe a method that adaptively decides which modality to use for each video segment (deciding where to look at and listen to in the video), with the goal of improving both accuracy and efficiency. Finally, I will conclude my talk by describing ongoing work that integrates this technology into a system for auto-curation of sports highlights based on multimodal video understanding. <br>
-					</p> -->
-
-				<!--	<p class="lead"  style="text-align:justify">
-						10:15-10:45 - Coffee break <br>
-						</p>
-
-					<p class="lead"  style="text-align:justify">
-					10:45-11:30 - Oral Session 1 (10-min presentations + 5-min Q&A)
-					</p>
-					<p class="lead" style="text-align:justify;font-size:15px;padding-left: 5em">
-						(ID 2) - TFRGAN: Leveraging Text Information for Blind Face Restoration with Extreme Degradation - <i>  Chengxing Xie (Xidian); Qian Ning (Xidian University); Weisheng Dong (Xidian University)*; Guangming Shi (Xidian University) </i> <br>
-						(ID 3) - The MONET dataset: Multimodal drone thermal dataset recorded in rural scenarios - <i> Luigi Riz (Fondazione Bruno Kessler); Andrea Caraffa (Fondazione Bruno Kessler); Matteo Bortolon (Fondazione Bruno Kessler;Istituto Italiano di Tecnologia (IIT);University of Trento); Mohamed Lamine Mekhalfi (Fondazione Bruno Kessler); Davide Boscaini (Fondazione Bruno Kessler); André F. Moura (INESC TEC); José  Filipe Antunes (INESC TEC); André M. Dias (INESC TEC); Hugo  M Silva (INESCTEC); Andreas  Leonidou (The Cyprus Institute ); Christos Constantinides (CARE-C); Christos M Keleshis (The Cyprus Institute); Dante  Abate (The Cyprus Institute); Fabio Poiesi (Fondazione Bruno Kessler)* </i> <br>
-						(ID 4) - SSGVS: Semantic  Scene Graph-to-Video Synthesis - <i> Yuren Cong (Leibniz University Hannover); Jinhui Yi (University of Bonn); Bodo Rosenhahn (Leibniz University Hannover); Michael Ying Yang (University of Twente)*</i> <br>
-					</p>
-
-					<p class="lead"  style="text-align:justify">
-					11:30-12:15 - Keynote 2 - <b> Helge Rhodin </b> (University of British Columbia) <br>
-					</p>
-
-					<p class="lead" style="text-align:justify;font-size:15px;padding-left: 5em">
-					TITLE: "Unpaired Multi-modal Learning" <br>
-					ABSTRACT: Multi-modal learning becomes easy when paired data is available. However, capturing multiple modalities simultaneously can be tricky or even impossible. For example, capturing 3D human motion trajectories is best done in a studio, while the corresponding video should be captured outdoors to achieve realism. In this presentation, I will showcase various new and established scenarios I encountered, ranging from the creation of a new sign language (video + audio) to neuroscience research on mice (video + brain neural activation), as well as human motion analysis (video + pose). All of these scenarios can be reduced to a form of correspondence finding. It is not the classical image correspondence, but rather finding correspondences across domains---a challenging problem with immense untapped potential.
-					</p>
-
-					<p class="lead"  style="text-align:justify">
-					12:15-13:15 - Lunch <br>
-					</p>
-
-					<p class="lead"  style="text-align:justify">
-					13:15-14:00 - Keynote 3 - <b> Alireza Fathi </b> (Google Research) <br>
-					</p>
-					<p class="lead" style="text-align:justify;font-size:15px;padding-left: 5em">
-					TITLE: "Retrieval and Tool Augmented Visual Language Models" <br>
-					</p>
-
-					<p class="lead"  style="text-align:justify">
-					14:00-14:45 - Oral Session 2  (10-min presentations + 5-min Q&A)
-					</p>
-
-					<p class="lead" style="text-align:justify;font-size:15px;padding-left: 5em">
-						(ID 5) - Multi Event Localization by Audio-Visual Fusion with Omnidirectional Camera and Microphone Array - <i> Wenru Zheng (Tokyo Institute of Technology)*; Ryota Yoshihashi (Tokyo Institute of Technology); Rei Kawakami (Tokyo Institute of Technology); Ikuro Sato (Tokyo Institute of Technology / Denso IT Laboratory); Asako Kanezaki (Tokyo Institute of Technology) </i> <br>
-				   		(ID 8) - Dynamic Multimodal Fusion - <i> Zihui Xue (The University of Texas at Austin)*; Radu Marculescu (The University of Texas at Austin) </i> <br>
-				   		(ID 9) - Exposing and Mitigating Spurious Correlations for Cross-Modal Retrieval - <i> Jae Myung Kim (University of Tuebingen)*; A. Sophia Koepke (University of Tübingen); Cordelia Schmid (Inria/Google); Zeynep Akata (University of Tübingen) </i> <br>
-					</p>
-
-					<p class="lead"  style="text-align:justify">
-					14:45-15:15 - Coffee break <br>
-        </p>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
-
-					<p class="lead"  style="text-align:justify">
-					15:15-16:00 - Oral Session 3  (10-min presentations + 5-min Q&A)
-					</p>
-
-					<p class="lead" style="text-align:justify;font-size:15px;padding-left: 5em">
-						(ID 10) - Adapting Grounded Visual Question Answering Models to Low Resource Languages - <i> Ying Wang (New York University)*; Jonas Pfeiffer (Google Research ); Nicolas Carion (NYU); Yann LeCun (New York University); Aishwarya Kamath (New York University) </i> <br>
-				   		(ID 11) - SEM-POS: Grammatically and Semantically Correct Video Captioning - <i> Asmar Nadeem (University of Surrey)*; Adrian Hilton (University of  Surrey); Robert Dawes (BBC Research); Graham Thomas (BBC); Armin Mustafa (University of Surrey) </i> <br>
-				   		(ID 15) - Robust Multiview Multimodal Driver Monitoring System Using Masked Multi-Head Self-Attention - <i> Yiming Ma (University of Warwick)*; Victor Sanchez (University of Warwick); Soodeh SN Nikan (Ford Motor Company); Devesh Upadhyay (Ford Motor Co.); Bhushan S Atote (University of Warwick); Tanaya Guha (University of Glasgow) </i> <br>
-					</p>
-
-					<p class="lead"  style="text-align:justify">
-					16:00-16:45 - Keynote 4 - <b> Aleksander Hołyński </b> ((UC Berkeley (BAIR) and Google Research)) <br>
-					</p>
-					<p class="lead"  style="text-align:justify">
-					16:45-16:50 - Closing Remarks <br>
-					</p>
-
-					<p class="lead"  style="text-align:justify">
-					16:50-18:00 -  Poster Session (all papers) <u> West Exhibit Hall - poster slots #64 - #83 </u> <br>
-					</p>
-
-				</div>
-            </div>
-            <div class="container">
-                <div class="wow fadeInRightBig" data-animation-delay="200">
+                <div class="col-lg-12">
+                    <h1>The 1<sup>st</sup> Workshop in Video Understanding and its Applications</h1>
+                    <h3>
+                        In conjunction with <a href="https://bmvc2023.org/" target="_blank" class="text-white"><b>BMVC 2023</b></a>.<br>
+                        <b>Aberdeen, United Kingdom</b><br>
+                        November 24<sup>th</sup> 2023
+                    </h3>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 
-				-->
-
-
-
-	<!-- Invited Speakers -->
-    <div id ="invited" class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-				<div class="container">
-
-
-				<div class="row wow fadeInRightBig"  data-animation-delay="200">
-					<h3 class="section-heading">Invited Speakers</h3>
-
-
-          <div class="row wow fadeInRightBig"  data-animation-delay="200">
-            <div class="col-sm-3 wow"  data-animation-delay="200">
-              <h4 class="section-heading"><center><a href="https://scholar.google.com/citations?user=IUZ-7_cAAAAJ" target="blank">João Carreira</a></center></h4>
-              <center><img  class="img-responsive img-rounded" style="border-radius: 50%" height="150" width="150" src="img/invited/Joao.png" alt=""></center>
-            </div>
-            <div class="col-sm-8 col-md-offset-1 wow" style="text-align:justify;padding: 70px 0" data-animation-delay="200">
-              <p> João is a senior research scientist at Google DeepMind, and prior to that, he was a postdoctoral researcher at the University of California, Berkeley. He is the first author of the paper 'Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset,' a groundbreaking work in the field of video understanding.
-
-              </p>
-            </div>
-          </div>
-
-          <div class="row wow fadeInRightBig">
-            <p>  <wbr> </p>
-            </div>
-					<div class="col-sm-3 wow"  data-animation-delay="200">
-						<h4 class="section-heading"><center><a href="http://people.cs.bris.ac.uk/~damen//" target="blank">Dima Damen</a></center></h4>
-						<center><img  class="img-responsive img-rounded" style="border-radius: 50%" height="150" width="150" src="img/invited/Dima.png" alt=""></center>
-					</div>
-					<div class="col-sm-8 col-md-offset-1 wow" style="text-align:justify;padding: 70px 0" data-animation-delay="200">
-						<p> Dima is a full professor in computer vision at the University of Bristol, she is also a senior research scientist at Google DeepMind. Dima is currently an EPSRC Fellow (2020-2025), focusing her research interests in the automatic understanding of object interactions, actions and activities using wearable visual (and depth) sensors. She is the project lead for EPIC-KITCHENS, the largest dataset in egocentric vision, with accompanying open challenges.
-						</p>
-				</div>
-				</div>
-
-        <div class="row wow fadeInRightBig">
-          <p>  <wbr> </p>
-          </div>
-        <div class="col-sm-3 wow"  data-animation-delay="200">
-          <h4 class="section-heading"><center><a href="https://fabiancaba.com/" target="blank">Fabian Caba</a></center></h4>
-          <center><img  class="img-responsive img-rounded" style="border-radius: 50%" height="150" width="150" src="img/invited/fabian.png" alt=""></center>
-        </div>
-        <div class="col-sm-8 col-md-offset-1 wow" style="text-align:justify;padding: 70px 0" data-animation-delay="200">
-          <p> Fabian is a Senior Research Scientist at Adobe working at the intersection of video understanding and generation. His main interests center around on the development of ML models aligned with creative human intent. He co-organized the ActivityNet and CVEU workshops during multiple editions.
-          </p>
-      </div>
-      </div>
-
-
-			<!--	<div class="row wow fadeInRightBig">
-					<p>  <wbr> </p>
-				</div>
-				<div class="row wow fadeInRightBig"  data-animati					<div class="col-sm-3 wow"  data-animation-delay="200">
-						<h4 class="section-heading"><center><a href="http://people.cs.bris.ac.uk/~damen//" target="blank">Dima Damen</a></center></h4>
-						<center><img  class="img-responsive img-rounded" style="border-radius: 50%" height="150" width="150" src="img/invited/Dima.png" alt=""></center>
-					</div>
-					<div class="col-sm-8 col-md-offset-1 wow" style="text-align:justify;padding: 70px 0" data-animation-delay="200">
-						<p> Dima Damen is a full professor in computer vision at the computer science department, University of Bristol. Her research focuses on the automatic understanding of object interactions, actions and activities in the video using wearable visual (and depth) sensors.
-						</p>
-				</div>
-				</div>on-delay="200">
-					<div class="col-sm-3 wow"  data-animation-delay="200">
-						<h4 class="section-heading"><center><a href="https://www.cs.ubc.ca/~rhodin/web/" target="blank">Helge Rhodin</a></center></h4>
-						<center><img  class="img-responsive img-rounded" style="border-radius: 50%" height="150" width="150" src="img/invited/rhodin.jpeg" alt=""></center>
-					</div>
-					<div class="col-sm-8 col-md-offset-1 wow" style="text-align:justify;padding: 70px 0" data-animation-delay="200">
-						<p> Helge Rhodin is an Assistant Professor at UBC and is affiliated with the computer vision and graphics labs.
-							Before, he was a lecturer and postdoc at EPFL and did his PhD at the MPI for Informatics at Saarland University.
-							Rhodin's research interests range from applications in sports, medicine, neuroscience, and augmented reality, which he works towards with fundamental contributions in 3D computer vision and self-supervised machine learning.
-
-
-						</p>
-					</div>
-				</div>
-
-				<div class="row wow fadeInRightBig">
-					<p> <wbr> </p>
-				</div>
-				<div class="row wow fadeInRightBig"  data-animation-delay="200">
-					<div class="col-sm-3 wow"  data-animation-delay="200">
-						<h4 class="section-heading"><center><a href="https://www.alirezafathi.org/" target="blank">Alireza Fathi
-						</a></center></h4>
-						<center><img  class="img-responsive img-rounded" style="border-radius: 50%" height="150" width="150" src="img/invited/fathi.jpeg" alt=""></center>
-					</div>
-					<div class="col-sm-8 col-md-offset-1 wow" style="text-align:justify;padding: 70px 0" data-animation-delay="200">
-						<p>
-							Alireza Fathi is currently a staff research scientist at Google Research Machine Perception team. Before joining Google, He spent a couple of years at Apple working on 3d computer vision.
-							Before that he was a Postdoctoral Fellow in FeiFei Li's lab at Stanford. He received his Ph.D. degree from Georgia Institute of Technology, and B.Sc. degree from Sharif University of Technology.
-
-
-						</p>
-					</div>
-				</div>
-
-				<div class="row wow fadeInRightBig">
-					<p> <wbr> </p>
-				</div>
-				<div class="row wow fadeInRightBig"  data-animation-delay="200">
-					<div class="col-sm-3 wow"  data-animation-delay="200">
-						<h4 class="section-heading"><center><a href="https://holynski.org/" target="blank"> Aleksander Hołyński
-						</a></center></h4>
-						<center><img  class="img-responsive img-rounded" style="border-radius: 50%" height="150" width="150" src="img/invited/holynski.jpeg" alt=""></center>
-					</div>
-					<div class="col-sm-8 col-md-offset-1 wow" style="text-align:justify;padding: 70px 0" data-animation-delay="200">
-						<p>  Aleksander Hołyński is a research scientist at Google Research and a postdoctoral scholar at Berkeley AI Research, working with Alyosha Efros and Angjoo Kanazawa.
-							Previously, He was PhD student at the University of Washington, advised by Steve Seitz, Brian Curless, and Rick Szeliski.
-							Before the PhD, he received my B.S. at the University of Illinois at Urbana-Champaign.
-						</p>
-					</div>
-				</div>
-
-
-           	 </div>
-        	</div>
-    	</div>
-    </div> -->
-
-	<!-- Organizers -->
-    <div id="organizers" class="content-section-a">
-
-		<div class="container">
-		        <div class="row wow fadeInRightBig"  data-animation-delay="200">
-				<h3 class="section-heading">Organizers</h3>
-
-
-				<div class="col-sm-3 wow fadeInRightBig"  data-animation-delay="200">
-					<h4 class="section-heading"><center>Faegheh Sardari</center></h4>
-					<center><img  class="img-responsive img-rounded" style="border-radius: 50%" height="200" width="200" src="img/organizer/faegheh.png" alt=""></center>
-					<h5 class="section-heading"><center><i>University of Surrey, United Kingdom</i></center></h5>
-				</div>
-
-				<div class="col-sm-3 wow fadeInRightBig"  data-animation-delay="200">
-					<h4 class="section-heading"><center>Armin Mustafa</center></h4>
-					<center><img  class="img-responsive img-rounded" style="border-radius: 50%" height="200" width="200" src="img/organizer/armin.png" alt=""></center>
-					<h5 class="section-heading"><center><i>University of Surrey, United Kingdom</i></center></h5>
-				</div>
-
-				<div class="col-sm-3 wow fadeInRightBig"  data-animation-delay="">
-					<h4 class="section-heading"><center>Asmar Nadeem</center></h4>
-					<center><img  class="img-responsive img-rounded" style="border-radius: 50%" height="200" width="200" src="img/organizer/asmar.png" alt=""></center>
-					<h5 class="section-heading"><center><i>University of Surrey, United Kingdom</i></center></h5>
-				</div>
-
-				</div>
-
-				<div class="row wow fadeInRightBig"  data-animation-delay="200">
-
-				<div class="col-sm-3 wow fadeInRightBig"  data-animation-delay="200">
-					<h4 class="section-heading"><center>Robert Dawes</center></h4>
-					<center><img  class="img-responsive img-rounded" style="border-radius: 50%" height="200" width="200" src="img/organizer/robert.png" alt=""></center>
-					<h5 class="section-heading"><center><i>BBC R&D, United Kingdom </i></center></h5>
-				</div>
-
-
-
-				<div class="col-sm-3 wow fadeInRightBig"  data-animation-delay="200">
-					<h4 class="section-heading"><center>Adrian Hilton</center></h4>
-					<center><img  class="img-responsive img-rounded" style="border-radius: 50%" height="200" width="200" src="img/organizer/adrian.png" alt=""></center>
-					<h5 class="section-heading"><center><i>University of Surrey, United Kingdom </i></center></h5>
-				</div>
-
-				<!-- <div class="col-sm-3 wow fadeInRightBig"  data-animation-delay="200">
-					<h4 class="section-heading"><center>Bodo Rosenhahn</center></h4>
-					<center><img  class="img-responsive img-rounded" style="border-radius: 50%" height="200" width="200" src="img/organizer/rosenhahn.jpg" alt=""></center>
-					<h5 class="section-heading"><center><i>Institut für Informationsverarbeitung, Leibniz-Universität Hannover, Germany</i></center></h5>
-				</div>
-				<div class="col-sm-3 wow fadeInRightBig"  data-animation-delay="200">
-					<h4 class="section-heading"><center>Vittorio Murino</center></h4>
-					<center><img  class="img-responsive img-rounded" style="border-radius: 50%" height="200" width="200" src="img/organizer/murino.jpg" alt=""></center>
-					<h5 class="section-heading"><center><i>Istituto Italiano di Tecnologia & Università di Verona, Italy </i></center></h5>
-				</div> -->
-			</div>
-        </div>
-    </div>
-
-	<!-- Program Committee -->
-    <div id ="committee" class="content-section-b" style="border-top: 0">
+    <!-- Scope Section -->
+    <section id="scope" class="content-section content-section-a">
         <div class="container">
             <div class="row">
-				<!--div class="col-sm-6 pull-right wow fadeInRightBig">
-                    <img class="img-responsive " src="img/ipad.png" alt="">
-                </div-->
-                <div class="wow fadeInLeftBig" data-animation-delay="200">
-                    <h3 class="section-heading"> Acknowledgments</h3>
-					<!--div class="sub-title lead3">Lorem ipsum dolor sit atmet sit dolor greand fdanrh<br> sdfs sit atmet sit dolor greand fdanrh sdfs</div-->
-					<p class="lead"  style="text-align:justify">
-						We gratefully acknowledge our reviewers
-
-						<ul class="lead">
-              Helge	Rhodin-University of British Collombia,
-
-              Mohammad Sabokrou-Institute for Research in Fundamental Sciences (IPM),
-
-              Sauradip Nag-University of Surrey,
-
-              Davide	Moltisanti-University of Edinburgh,
-
-              Ayushi	Dutta-University of Surrey,
-
-              Hanyuan	Wang-University of Bristol,
-
-              Ozge Mercanoglu Sincan-University of Surrey,
-
-              Mohammad khalooei-Amirkabir University of Technology,
-
-              Otto Brookes-University of Bristol,
-
-              Xinyu Yang-Lancaster University
-							<!-- AJ	Piergiovanni,
-							Alina	Roitberg,
-							Andrea	Pilzer,
-							Andrea	Zunino,
-							Anelia	Angelova,
-							Anil Osman	Tur,
-							Arif	Mahmood,
-							Carles	Ventura,
-							Christoph	Reinders,
-							Dario	Fontanel,
-							Davide	Talon,
-							Dayan	Guan,
-							Enrico	Fini,
-							Fabio	Cermelli,
-							Giacomo	Zara,
-							Gianluca	Scarpellini,
-							Guanglei	Yang,
-							Haidong	Zhu,
-							Haoyu	Dong,
-							Hari Prasanna	Das ,
-							Ichraf	Lahouli,
-							Jae Myung	Kim,
-							Jiguo	Li,
-							Karsten	Roth,
-							Leonard	Salewski,
-							Letitia	Parcalabescu,
-							Limin	Wang,
-							Mihee	Lee,
-							Nicola	Dall'Asen,
-							Praneet	Dutta,
-							Pritish	Sahu,
-							Qing	Wan,
-							Rico	Jonschkowski,
-							Ruggero	Ragonesi,
-							Sharath	Koorathota,
-							Shih-Han	Chou,
-							Shyamgopal	Karthik,
-							Suvarna	Kadam,
-							Tal	Hakim,
-							Thiago	Oliveira-Santos,
-							Thomas	Hummel,
-							Thomas	Theodoridis,
-							Uddeshya	Upadhyay,
-							Victor	Turrisi da Costa,
-							Vladimir	Kniaz,
-							Vladimir	Pavlovic,
-							Wentong	Liao,
-							Woojeong	Jin,
-							Xu	Dong,
-							Yanbei	Chen,
-							Yoonsuck	Choe,
-							Yue	Song,
-							Ze	Wang. -->
-
-						</ul>
-
-					</p>
-
-					 <!--p><a class="btn btn-embossed btn-primary" href="#" role="button">View Details</a>
-					 <a class="btn btn-embossed btn-info" href="#" role="button">Visit Website</a></p-->
-				</div>
+                <div class="col-lg-12">
+                    <h2 class="section-heading">The 1<sup>st</sup> Workshop in Video Understanding and its Applications (VUA 2023)</h2>
+                    <p class="lead">
+                        Video understanding is a popular field in computer vision and AI where we aim to learn/assess the world around us from video footage and can benefit many real-world applications, such as training and education, patient monitoring, sports assessment, and security systems. By automating these applications through video analysing, not only we can save money and time for their users, but also, we can decrease human errors. Despite the recent advances in the other areas of computer vision, e.g. image analysis, video understanding is still an unsolved problem and is considered a very challenging task.
+                    </p>
+                    <p class="lead">
+                        The proposed workshop on video understanding aims to address the challenges in this field by making the following contributions:
+                        <ul>
+                            <li>Bringing together leading experts in the field of video understanding to help propel the field forward. This includes junior and senior researchers, with equal representation and contribution from academia and industry</li>
+                            <li>The workshop also aims to stimulate and accelerate research progress in the field of video understanding to match the requirements of real-world applications by identifying the challenges and ways to address them.</li>
+                        </ul>
+                    </p>
+                    <p class="lead">
+                        <b>Potential topics</b> include, but are not limited to:
+                        <ul>
+                            <li>Application of Video Understanding to healthcare and media production</li>
+                            <li>View-invariant and 3D video understanding (e.g. 3D action recognition)</li>
+                            <li>Transformer for video understanding</li>
+                            <li>Generating synthetic data for video understating tasks</li>
+                            <li>Self-supervised learning for video understanding</li>
+                            <li>Multi-modal video understanding</li>
+                            <li>Action/event detection</li>
+                            <li>Video captioning</li>
+                            <li>Video editing and summarization</li>
+                            <li>Videography/virtual cinematography</li>
+                            <li>Video search and retrieval</li>
+                        </ul>
+                    </p>
+                </div>
             </div>
         </div>
-        <!-- /.container -->
-    </div>
+    </section>
 
-    <!-- Sponsor -->
-     <!-- <div id ="sponsors" class="content-section-a" style="border-top: 0">
-         <div class="container">
-             <div class="row">
-				<div class="col-sm-6 pull-right wow fadeInRightBig">
-                    <img class="img-responsive " src="img/ipad.png" alt="">
-                </div
-                 <div class="wow fadeInRightBig" data-animation-delay="200">
-                     <h3 class="section-heading"> Sponsors </h3>
-					<div class="sub-title lead">We gratefully acknowlegde our sponsors for supporting the Best Paper Award</div>
-					<p> </p>
-                     <p class="lead"  style="text-align:justify">
-						 <a href="https://www.snap.com/" target="_blank"><img src="img/sponsor/Snap-black.png" width="400"></a>
-					 </p>
-					 <p> <a class="btn btn-embossed btn-info" href="https://www.snap.com/" role="button">Visit Website</a></p
-					<p> &nbsp;&nbsp;</p>
-					 <p class="lead"  style="text-align:justify">
-						 <a href="https://www.bosch.com/" target="_blank"><img src="img/sponsor/bosch.png" width="400"></a>
-					 </p>
-					 <p> <a class="btn btn-embossed btn-info" href="https://www.bosch.com/" role="button">Visit Website</a></p
-				 </div>
-             </div>
-         </div>
-     </div>  -->
-
-
-
-<!-- <div id ="special_issue" class="content-section-a" style="border-top: 0">
+    <!-- Submit Section -->
+    <section id="submit" class="content-section content-section-b">
         <div class="container">
-                <div class="wow fadeInRightBig" data-animation-delay="200">
-					<h3 class="section-heading"> IJCV Special Issue </h3>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading">Submission</h2>
+                    <p class="lead">
+                        Papers will be limited to 9 pages according to the <a href="https://bmvc2023.org/authors/submit-your-paper/" target="_blank">BMVC format</a> (c.f. main conference authors guidelines).
+                        Papers will be published in BMVC 2023 workshop proceedings.
+                    </p>
+                    <p class="lead">
+                        All the papers should be submitted using CMT website <a href="https://cmt3.research.microsoft.com/VUABMVC2023" target="_blank">https://cmt3.research.microsoft.com/VUABMVC2023</a>.
+                    </p>
 
-					<a href="https://www.springer.com/journal/11263/updates/23159852?gclid=Cj0KCQjwhqaVBhCxARIsAHK1tiNlJcecKyxOzacWAGubPisKaHP7P6XkYYGt1xXKnuxPG-rTPP2FjV4aAmdAEALw_wcB" target="_blank"><img src="img/special_issue.png" width="1000"></a>
+                    <h2 class="section-heading mt-5">Important Dates</h2>
+                    <ul class="lead">
+                        <li>Deadline for submission: August 20<sup>th</sup>, 2023 - 23:59 British Summer Time</li>
+                        <li>Notification of acceptance: September 10<sup>th</sup>, 2023</li>
+                        <li>Camera Ready submission deadline: September 25<sup>th</sup>, 2023</li>
+                        <li>Workshop date: November 24<sup>th</sup>, 2023</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-		</div>
-    </div>
-     -->
-<!--
-     Old editions
--->
-  <!--  <div id ="old_editions" class="content-section-a" style="border-top: 0">
+    <!-- Program Section -->
+    <section id="program" class="content-section content-section-a">
         <div class="container">
-                <div class="wow fadeInRightBig" data-animation-delay="200">
-					<h3 class="section-heading"> Old Editions </h3>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading">Program</h2>
+                    <p class="lead">
+                        <u>Robert Gordon University, Sir Ian Wood Building, Garthdee Campus</u>
+                    </p>
+                    <ul class="list-unstyled lead">
+                        <li>10:00-10:05 - Welcome and Introduction</li>
+                        <li>10:05-10:55 - Keynote 1 - <b>Dr. Joao Carreira (Google Deepmind)</b> (40 mins talk followed by 10 mins Q&A)</li>
+                        <li>11:00-11:50 - Keynote 2 - <b>Professor Dima Damen (University of Bristol)</b> (40 mins talk followed by 10 mins Q&A)</li>
+                        <li>11:50-12:10 - AI4ME Presentation - <b>Faegheh Sardari & Asmar Nadeem</b> (Video Understanding for personalized media production)</li>
+                        <li>12:10-12:30 - Lunch break</li>
+                        <li>12:30-14:00 - Oral Session (10-min presentations + 2-min Q&A)</li>
+                        <li>14:00-14:50 - Keynote 3 - <b>Dr. Fabian Caba (Adobe)</b> (40 mins talk followed by 10 mins Q&A)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-					<ul class="lead">
-						<li> <b>1<sup>st</sup> edition @ ECCV 2018 - Munich, Germany </b>, <a href="https://mula2018.github.io/">https://mula2018.github.io</a> </li>
-						<li> <b>2<sup>nd</sup> edition @ CVPR 2019 - Long Beach, CA </b>,  <a href="index_2019.html"> 2019 Edition</a></li>
-						<li> <b>3<sup>rd</sup> edition @ CVPR 2020 - VIRTUAL </b>,  <a href="https://mul-workshop.github.io/">https://mul-workshop.github.io/</a>  </li>
-						<li> <b>4<sup>th</sup> edition @ CVPR 2021 - VIRTUAL </b>,  <a href="index_2021.html"> 2021 Edition</a></li>
-						<li> <b>5<sup>th</sup> edition @ CVPR 2022 - New Orleans </b>,  <a href="index_2022.html"> 2022 Edition</a></li>
+    <!-- Invited Speakers Section -->
+    <section id="invited" class="content-section content-section-b">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading">Invited Speakers</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="text-center">
+                        <h4><a href="https://scholar.google.com/citations?user=IUZ-7_cAAAAJ" target="_blank">João Carreira</a></h4>
+                        <img class="img-fluid img-rounded" src="img/invited/Joao.png" alt="João Carreira">
+                        <p class="mt-3">João is a senior research scientist at Google DeepMind, and prior to that, he was a postdoctoral researcher at the University of California, Berkeley. He is the first author of the paper 'Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset,' a groundbreaking work in the field of video understanding.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="text-center">
+                        <h4><a href="http://people.cs.bris.ac.uk/~damen/" target="_blank">Dima Damen</a></h4>
+                        <img class="img-fluid img-rounded" src="img/invited/Dima.png" alt="Dima Damen">
+                        <p class="mt-3">Dima is a full professor in computer vision at the University of Bristol, she is also a senior research scientist at Google DeepMind. Dima is currently an EPSRC Fellow (2020-2025), focusing her research interests in the automatic understanding of object interactions, actions and activities using wearable visual (and depth) sensors. She is the project lead for EPIC-KITCHENS, the largest dataset in egocentric vision, with accompanying open challenges.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="text-center">
+                        <h4><a href="https://fabiancaba.com/" target="_blank">Fabian Caba</a></h4>
+                        <img class="img-fluid img-rounded" src="img/invited/fabian.png" alt="Fabian Caba">
+                        <p class="mt-3">Fabian is a Senior Research Scientist at Adobe working at the intersection of video understanding and generation. His main interests center around on the development of ML models aligned with creative human intent. He co-organized the ActivityNet and CVEU workshops during multiple editions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-					</ul>
-		</div>
-	</div> -->
+    <!-- Organizers Section -->
+    <section id="organizers" class="content-section content-section-a">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading">Organizers</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="text-center">
+                        <h4>Faegheh Sardari</h4>
+                        <img class="img-fluid img-rounded" src="img/organizer/faegheh.png" alt="Faegheh Sardari">
+                        <p><i>University of Surrey, United Kingdom</i></p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="text-center">
+                        <h4>Armin Mustafa</h4>
+                        <img class="img-fluid img-rounded" src="img/organizer/armin.png" alt="Armin Mustafa">
+                        <p><i>University of Surrey, United Kingdom</i></p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="text-center">
+                        <h4>Asmar Nadeem</h4>
+                        <img class="img-fluid img-rounded" src="img/organizer/asmar.png" alt="Asmar Nadeem">
+                        <p><i>University of Surrey, United Kingdom</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="text-center">
+                        <h4>Robert Dawes</h4>
+			<img class="img-fluid img-rounded" src="img/organizer/robert.png" alt="Robert Dawes">
+                        <p><i>BBC R&D, United Kingdom</i></p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="text-center">
+                        <h4>Adrian Hilton</h4>
+                        <img class="img-fluid img-rounded" src="img/organizer/adrian.png" alt="Adrian Hilton">
+                        <p><i>University of Surrey, United Kingdom</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Acknowledgments Section -->
+    <section id="committee" class="content-section content-section-b">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading">Acknowledgments</h2>
+                    <p class="lead">We gratefully acknowledge our reviewers:</p>
+                    <ul class="lead">
+                        <li>Helge Rhodin - University of British Columbia</li>
+                        <li>Mohammad Sabokrou - Institute for Research in Fundamental Sciences (IPM)</li>
+                        <li>Sauradip Nag - University of Surrey</li>
+                        <li>Davide Moltisanti - University of Edinburgh</li>
+                        <li>Ayushi Dutta - University of Surrey</li>
+                        <li>Hanyuan Wang - University of Bristol</li>
+                        <li>Ozge Mercanoglu Sincan - University of Surrey</li>
+                        <li>Mohammad khalooei - Amirkabir University of Technology</li>
+                        <li>Otto Brookes - University of Bristol</li>
+                        <li>Xinyu Yang - Lancaster University</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div id="contacts" class="content-section-c ">
-			 <!-- Contacts -->
-		<div class="container">
-			<div class="row">
+    <!-- Contacts Section -->
+    <section id="contacts" class="content-section content-section-a">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading">Contacts</h2>
+                    <p class="lead">For additional info please contact us <a href="mailto:vua.workshop@gmail.com">here</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<!--div class="col-sm-6 pull-right wow fadeInRightBig">
-                    <img class="img-responsive " src="img/ipad.png" alt="">
-                </div-->
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">© VUA 2023 - The 1st Workshop in Video Understanding and its Applications</p>
+        </div>
+    </footer>
 
-                <div class="wow fadeInLeftBig" data-animation-delay="200">
-                    <h3 class="section-heading" style="color:white">Contacts</h3>
-					<!--div class="sub-title lead3">Lorem ipsum dolor sit atmet sit dolor greand fdanrh<br> sdfs sit atmet sit dolor greand fdanrh sdfs</div-->
-                    <p class="lead"  style="text-align:left;color:white">
-						                                    For additional info please contact us <u><a style="color:white" href="mailto:vua.workshop@gmail.com">here</a></u>
-					</p>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 
-				</div>
-				<!-- <div class="wow fadeInLeftBig" data-animation-delay="200">
-                    <h3 class="section-heading"></h3>
-                    <p class="lead"  style="text-align:right">
-						©VUA2023
-					</p>
+    <!-- Custom scripts -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
 
-				</div>   	 -->
-      </div>
-     			<div class="row">
-
-     						<div class="col-md-6 col-md-offset-3 text-center">
-     							<div >
-     									<div class="morph-button ">
-     										<button type="button"></button>
-
-     									</div>
-     							</div>
-     						</div>
-     			</div>
-     		</div>
-     	</div>
-
-
-         <footer>
-
-         </footer>
-
-         <!-- JavaScript -->
-         <script src="js/jquery-1.10.2.js"></script>
-         <script src="js/bootstrap.js"></script>
-     	<script src="js/owl.carousel.js"></script>
-     	<script src="js/script.js"></script>
-     	<!-- StikyMenu -->
-     	<script src="js/stickUp.min.js"></script>
-     	<script type="text/javascript">
-     	  jQuery(function($) {
-     		$(document).ready( function() {
-     		  $('.navbar-default').stickUp();
-
-     		});
-     	  });
-
-     	</script>
-     	<!-- Smoothscroll -->
-     	<script type="text/javascript" src="js/jquery.corner.js"></script>
-     	<script src="js/wow.min.js"></script>
-     	<script>
-     	 new WOW().init();
-     	</script>
-     	<script src="js/classie.js"></script>
-     	<script src="js/uiMorphingButton_inflow.js"></script>
-     	<!-- Magnific Popup core JS file -->
-     	<script src="js/jquery.magnific-popup.js"></script>
-     </body>
-
-     </html>
+        // Activate scrollspy to highlight active navigation item
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#navbarNav'
+        })
+    </script>
+</body>
+</html>
