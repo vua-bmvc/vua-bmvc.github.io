@@ -67,14 +67,13 @@
     }
     
     /* Update existing img-rounded class */
-    .img-rounded {
-        border-radius: 50%;
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        margin: 1rem auto;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
+        .img-rounded {
+            border-radius: 50%;
+            width: 200px;  /* Set a fixed width */
+            height: 200px; /* Set a fixed height */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            margin-bottom: 1rem;
+        }
         @media (max-width: 768px) {
             .intro-header h1 {
                 font-size: 2rem;
